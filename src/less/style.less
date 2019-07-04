@@ -1,0 +1,42 @@
+html#gachi {
+	@import 'style/_grid.less';
+	@import 'style/_reset.less';
+	
+	// & {
+	// 	--fs: .7px;
+	// 	font-size: var(--fs);
+	// 
+	// 	@media (@sm) {
+	// 		--fs: .85px;
+	// 	}
+	// 	@media (@md) {
+	// 		--fs: .9px;
+	// 	}
+	// 	@media (@lg) {
+	// 		--fs: .95px;
+	// 	}
+	// 	@media (@xl) {
+	// 		--fs: 1px;
+	// 	}
+	// }
+	
+	
+	.container {
+		--cw: 100%;
+		width: var(--cw);
+		
+		@media (@sm) {
+			--cw: 540px;
+		}
+		@media (@md) {
+			--cw: 720px;
+		}
+		@media (@lg) {
+			--cw: 960px;
+		}
+		@media (@xl) {
+			--cw: 1170px;
+		}
+	}
+
+}
