@@ -221,4 +221,159 @@ html#gachi {
 		}
 	}
 	
+	.pre_footer {
+		@mb: 15px;
+		
+		&.row,
+		.row {
+			margin-left: -1%;
+			margin-right: -1%;
+			
+			> * {
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+		}
+		
+		&-section {
+			padding-top: 30px;
+			background-color: #c9c9c9;
+			
+			@media (@sm) {
+				padding: 112px 0 (80px - @mb);
+			}
+		}
+		
+		&-item {
+			.c();
+		}
+		
+		&-content {
+			flex-grow: 1;
+			padding: 15px 15px 0;
+			background-color: #fff;
+			margin-bottom: @mb;
+		}
+		
+		&-widget {
+			padding: 0 0 @mb;
+			@import (less) 'widget.css';
+		}
+		
+		.hr(@_) {
+			padding: 0;
+			background-color: #c9c9c9;
+			margin-bottom: @mb;
+		}
+		.hr(h) {
+			align-self: center;
+			height: 2px;
+		}
+		.hr(v) {
+			align-self: auto;
+			width: 2px;
+			height: auto;
+		}
+		
+		.last_reviews {
+			font-family: "Bliss Pro";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			
+			&-item {
+				flex: 1 1 0;
+				margin-bottom: @mb;
+			}
+			
+			&-hr {
+				.hr(h);
+				
+				@media (@sm) {
+					.hr(v);
+				}
+				
+				@media (@xl) {
+					.hr(h);
+				}
+			}
+			
+			&-title {
+				font-size: 26px;
+				margin-bottom: 16px;
+			}
+			
+			&-header {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 4px;
+			}
+			
+			&-name {
+				font-size: 20px;
+			}
+			
+			&-body {
+				p {
+					font-size: 14px;
+					line-height: 18px;
+					margin-bottom: 8px;
+				}
+			}
+			
+			&-footer {
+				a {
+					display: inline;
+					color: #02c904;
+					line-height: 18px;
+					text-decoration: underline;
+				}
+			}
+		}
+		
+		.socials {
+			height: 100%;
+			align-content: stretch;
+			
+			&-item {
+				flex: 1 1 0;
+				.c();
+				margin-bottom: @mb;
+			}
+			
+			&-content {
+				flex-grow: 1;
+				.c();
+				justify-content: center;
+			}
+			
+			&-title {
+				text-align: center;
+				font-family: "Bliss Pro";
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-bottom: 1em;
+			}
+			
+			&-img {
+				.c();
+				justify-content: center;
+				align-items: center;
+			}
+			
+			&-hr {
+				.hr(h);
+				
+				@media (@sm) {
+					.hr(v);
+				}
+				
+				@media (@xl) {
+					.hr(h);
+				}
+			}
+		}
+	}
+	
 }

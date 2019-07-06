@@ -185,24 +185,130 @@
 		</div>
 	</section>
 	
+	<section class='pre_footer-section'>
+		<div class='container'>
+			<div class='pre_footer row'>
+				<div class='pre_footer-item col-12 col-xl-5'>
+					<div class='pre_footer-content'>
+						<h3 class='last_reviews-title'>Отзывы</h3>
+						<ul class='last_reviews row'>
+							<li class='last_reviews-item col-12 col-sm-6 col-xl-12'>
+								<div class='last_reviews-content'>
+									
+									<header class='last_reviews-header'>
+										<h4 class='last_reviews-name'>
+											Сергей
+										</h4>
+										<div class='last_reviews-date'>
+											28.02.2019
+										</div>
+									</header>
+									<div class='last_reviews-body'>
+										<p>
+											Текст - отзыв вставлен в качестве примера. Текст - отзыв вставлен 
+											в качестве примера. Текст - отзыв вставлен в качестве примера. Текст - 
+											отзыв вставлен в качестве примера. Текст - отзыв вставлен в качестве 
+											примера.
+										</p>
+									</div>
+									<footer class='last_reviews-footer'>
+										<a href=''>Подробнее</a>
+									</footer>
+								</div>
+							</li>
+							
+							<li class='last_reviews-hr col-12 col-sm-auto col-xl-12'></li>
+							
+							<li class='last_reviews-item col-12 col-sm-6 col-xl-12'>
+								<div class='last_reviews-content'>
+									
+									<header class='last_reviews-header'>
+										<h4 class='last_reviews-name'>
+											Сергей
+										</h4>
+										<div class='last_reviews-date'>
+											28.02.2019
+										</div>
+									</header>
+									<div class='last_reviews-body'>
+										<p>
+											Текст - отзыв вставлен в качестве примера. Текст - отзыв вставлен 
+											в качестве примера. Текст - отзыв вставлен в качестве примера. Текст - 
+											отзыв вставлен в качестве примера. Текст - отзыв вставлен в качестве 
+											примера.
+										</p>
+									</div>
+									<footer class='last_reviews-footer'>
+										<a href=''>Подробнее</a>
+									</footer>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class='pre_footer-item col-12 col-xl-2'>
+					<div class='pre_footer-content'>
+						<ul class='socials row'>
+							<li class='socials-item col-12 col-sm-6 col-xl-12'>
+								<a href='' class='socials-content'>
+									<header class='socials-header'>
+										<h3 class='socials-title'>Мы на Youtube</h3>
+									</header>
+									<div class='socials-body'>
+										<div class='socials-img'>
+											<img src='img/yt.png' alt='Youtube' />
+										</div>
+									</div>
+								</a>
+							</li>
+							
+							<li class='socials-hr col-12 col-sm-auto col-xl-12'></li>
+							
+							<li class='socials-item col-12 col-sm-6 col-xl-12'>
+								<a href='' class='socials-content'>
+									<header class='socials-header'>
+										<h3 class='socials-title'>Присоединяйтесь 
+										к нашей группе ВК:</h3>
+									</header>
+									<div class='socials-body'>
+										<div class='socials-img'>
+											<img src='img/vk.png' alt='Youtube' />
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class='pre_footer-item col-12 col-xl-5'>
+					<div class='pre_footer-content pre_footer-widget'>
+						//= tpl/widget.html
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<script src='js/swiper.js'></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function (e) {
-		   if (document.querySelector('.new_products')) {
-		      let swiper = new Swiper('.new_products', {
-		         slidesPerView: 'auto',
-		         simulateTouch: false,
-		         navigation: {
-		            nextEl: '.new_products .swiper-next',
-		            prevEl: '.new_products .swiper-prev'
-		         },
-		         keyboard: {
-		            enabled: true,
-		            onlyInViewport: true
-		         }
-		      });
-		   }
-		});
+	document.addEventListener('DOMContentLoaded', function (e) {
+		if (document.querySelector('.new_products')) {
+			let swiper = new Swiper('.new_products', {
+				slidesPerView: 'auto',
+				simulateTouch: false,
+				navigation: {
+					nextEl: '.new_products .swiper-next',
+					prevEl: '.new_products .swiper-prev'
+				},
+				keyboard: {
+					enabled: true,
+					onlyInViewport: true
+				}
+			});
+		}
+	});
 	</script>
 </body>
 </html>
