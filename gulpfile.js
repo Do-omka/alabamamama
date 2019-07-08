@@ -64,7 +64,7 @@ function css() {
 		],
 		// {syntax: require('postcss-less')},
 		))
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest('dev/css'))
 }
 

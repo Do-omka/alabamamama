@@ -1,4 +1,4 @@
 /dev/*
-!/dev/css
+!/dev/css/style.css
 /ftp-config.js
 /assets
