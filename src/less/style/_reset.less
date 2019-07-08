@@ -5,16 +5,16 @@
 
 .initial {
 	all: initial;
-	display: block;
 	box-sizing: border-box;
+	display: block;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	text-size-adjust: 100%; // safari mobile: font-size fix
 }
 
 .unset {
 	all: unset;
-	display: block;
 	box-sizing: border-box;
+	display: block;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	text-size-adjust: 100%; // safari mobile: font-size fix
 }
@@ -46,20 +46,6 @@
 	}
 }
 
-strong,
-b,
-i,
-em,
-span {
-	display: inline;
-}
-
-head,
-style,
-script {
-	display: none;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -74,39 +60,41 @@ label {
 	}
 }
 
+head,
+style,
+script {
+	display: none;
+}
+
+a, abbr, acronym, audio, b, bdi, bdo, big, br, button, canvas, cite, code, data, datalist, del, dfn, em, embed, i, iframe, img, input, ins, kbd, label, map, mark, meter, noscript, object, output, picture, progress, q, ruby, s, samp, select, slot, small, span, strong, sub, sup, svg, template, textarea, time, u, tt, var, video, wbr {
+	display: inline;
+}
+
 table {
 	display: table;
-	
-	caption {
-		display: table-caption;
-	}
-	
-	thead {
-		display: table-header-group;
-	}
-	
-	tbody {
-		display: table-row-group;
-	}
-	
-	tfoot {
-		display: table-footer-group;
-	}
-	
-	tr {
-		display: table-row;
-	}
-	
-	colgroup {
-		display: table-column-group;
-	}
-	
-	col {
-		display: table-column;
-	}
-	
-	td,
-	th {
-		display: table-cell;
-	}
+}
+caption {
+	display: table-caption;
+}
+thead {
+	display: table-header-group;
+}
+tbody {
+	display: table-row-group;
+}
+tfoot {
+	display: table-footer-group;
+}
+tr {
+	display: table-row;
+}
+colgroup {
+	display: table-column-group;
+}
+col {
+	display: table-column;
+}
+td,
+th {
+	display: table-cell;
 }
