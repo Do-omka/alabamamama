@@ -3,6 +3,10 @@
 #gachi {
 	@import 'style/_grid.less';
 	
+	* {
+		box-sizing: border-box;
+	}
+	
 	.ccontainer {
 		--cw: 100%;
 		max-width: var(--cw);
@@ -142,6 +146,7 @@
 			
 			&::before {
 				content: '';
+				display: block;
 				padding-top: 100%;
 			}
 			

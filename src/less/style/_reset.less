@@ -13,7 +13,6 @@
 
 .unset {
 	all: unset;
-	box-sizing: border-box;
 	display: block;
 	-webkit-text-fill-color: currentColor; // safari: text color fix
 	text-size-adjust: 100%; // safari mobile: font-size fix
@@ -39,9 +38,11 @@
 	&::before,
 	&::after {
 		.unset();
+		display: unset;
 	}
 	&::placeholder {
 		.unset();
+		display: unset;
 		-webkit-text-security: none; // webkit: password input placeholder fix
 	}
 }
