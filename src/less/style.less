@@ -381,15 +381,15 @@
 		}
 	}
 	
+	.pp {
+		background-color: #fff;
+		padding: 10px;
+		border: unset;
+		margin-bottom: 12px;
+	}
+	
 	.wrapper-product {
 		background-color: #ebebeb;
-		
-		.pp {
-			background-color: #fff;
-			padding: 10px;
-			border: unset;
-			margin-bottom: 12px;
-		}
 		
 		.product {
 			border: unset;
@@ -410,7 +410,6 @@
 	}
 	
 	.left {
-		
 		.brand {
 			display: flex;
 			color: #000000;
@@ -465,6 +464,272 @@
 					justify-content: center;
 					align-items: center;
 					text-align: center;
+				}
+			}
+		}
+	}
+	
+	.right {
+		.productvars {
+			background: none;
+			padding-bottom: 12px;
+			margin-top: 0;
+			
+			.pp {
+				.pp();
+				.r();
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 0;
+				
+				@media (@sm) {
+					padding: 15px;
+				}
+			}
+			
+			.taste {
+				color: #000000;
+				font-family: "Bliss Pro";
+				font-size: 20px;
+				font-weight: 400;
+				font-size: 18px;
+				width: auto;
+				margin-right: auto;
+			}
+			
+			.fas {
+				padding-top: 0;
+				padding-bottom: 0;
+				color: #000000;
+				font-family: "Bliss Pro";
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 22px;
+				background-color: #f5f5f5;
+				
+				.retail {
+					display: flex;
+					align-items: center;
+				}
+				
+				.price {
+					color: #171717;
+					font-family: "Bebas Neue Bold";
+					font-weight: 400;
+					line-height: 22px;
+					font-size: 30px;
+				}
+				
+				.weight {
+					color: #949495;
+					font-family: "Bliss Pro";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 22px;
+					margin-right: 15px;
+					
+					&::after {
+						content: ' гр.';
+					}
+				}
+				
+				.special {
+					display: flex;
+					color: #55b025;
+					font-family: "Bliss Pro";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 22px;
+					padding: 15px;
+					border: 1px solid #55b025;
+					margin: 0 5px;
+					
+					> * {
+						color: inherit;
+					}
+				}
+				
+				> :not(.special) {
+					margin: 5px;
+				}
+				
+			}
+			
+			.list {
+				padding: 0;
+				
+				.item {
+					.pp();
+					
+					&:not(:last-child) {
+						border-bottom: 1px solid #e4e4e4;;
+					}
+					
+					.buy {
+						display: flex;
+						align-items: center;
+						margin-left: auto;
+						margin: 0;
+					}
+					
+					.status {
+						width: auto;
+						text-transform: uppercase;
+						
+						&::before {
+							content: '';
+						}
+					}
+					
+					.countwrap {
+						width: auto;
+						margin-left: 10px;
+						margin-right: 10px;
+						
+						.count {
+							.unset();
+							> * {
+							.unset();
+							}
+							
+							display: flex;
+							border: 1px solid #ebebeb;
+							border-radius: 0;
+							background-color: #ffffff;
+							
+							.btn.icon {
+								.c();
+								justify-content: center;
+								align-items: center;
+								color: #9c9c9e;
+								font-family: "Bliss Pro";
+								font-size: 18px;
+								font-weight: 400;
+								width: 30px;
+								height: 30px;
+								
+								&.inc {
+									order: 1;
+								}
+							}
+							
+							.input {
+								width: 26px;
+								
+								input {
+									color: #56b325;
+									font-family: "Bliss Pro";
+									font-size: 22px;
+									font-weight: 400;
+									font-size: 18px;
+									background-color: #f7f5f5;
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+					}
+					
+					> * {
+						margin: 5px;
+					}
+					
+					.basket {
+						background-color: #ca0d03;
+						
+						@media (max-width: 767px) {
+							width: 51px;
+							height: 46px;
+							font-size: 0;
+							background: #ca0d03 url(../img/basket.png) no-repeat center / contain content-box border-box;
+						}
+					}
+					
+					&.not_available {
+						.taste,
+						.status {
+							color: #878787;
+						}
+					}
+				}
+			}
+			
+			.btnplace {
+				width: auto;
+				margin: 0;
+				
+				@media (@sm) {
+					margin: 0 5px;
+				}
+				
+				.basket {
+					background-color: #55b025;
+					color: #ffffff;
+					font-family: "Bebas Neue Bold";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 22px;
+					letter-spacing: 0.45px;
+					padding: 12px;
+					border: 0;
+					border-radius: 0;
+					width: 170px;
+					max-width: none;
+					text-transform: uppercase;
+				}
+			}
+			
+			.to_discount {
+				color: #000000;
+				font-family: "Bliss Pro";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 22px;
+				text-decoration-line: underline;
+				text-decoration-style: dashed;
+				
+				&.pp {
+					border-top: 1px solid #e4e4e4;;
+				}
+			}
+			
+			.info {
+				.total {
+					display: flex;
+					align-items: center;
+				}
+				
+				.infoprice {
+					color: #ca0d03;
+					font-family: "Bebas Neue Bold";
+					font-size: 40px;
+					font-weight: 400;
+					line-height: 22px;
+					margin: 5px;
+					margin-right: 25px;
+					
+					.oldprice {
+						display: flex;
+						color: #949495;
+						font-size: 24px;
+						margin: 0;
+					}
+					
+					.sale {
+						color: #ca0d03;
+						font-size: 16px;
+						background: unset;
+						text-decoration: none;
+					}
+				}
+				
+				.currprice {
+					color: #ca0d03;
+					font-family: "Bebas Neue Bold";
+					font-size: 40px;
+					font-weight: 400;
+					line-height: 22px;
+					margin: 10px;
 				}
 			}
 		}
