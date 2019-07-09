@@ -386,6 +386,10 @@
 		padding: 10px;
 		border: unset;
 		margin-bottom: 12px;
+		
+		@media (@sm) {
+			padding: 15px;
+		}
 	}
 	
 	.wrapper-product {
@@ -469,7 +473,7 @@
 		}
 	}
 	
-	.right {
+	.product .right {
 		.productvars {
 			background: none;
 			padding-bottom: 12px;
@@ -481,10 +485,6 @@
 				justify-content: space-between;
 				align-items: center;
 				margin-bottom: 0;
-				
-				@media (@sm) {
-					padding: 15px;
-				}
 			}
 			
 			.taste {
@@ -731,6 +731,164 @@
 					line-height: 22px;
 					margin: 10px;
 				}
+			}
+		}
+		
+		.productinfo {
+			border: none;
+			margin-top: 0;
+			margin-bottom: 12px;
+			
+			.tabs {
+				display: flex;
+				border: none;
+				// text-transform: uppercase;
+				
+				> li {
+					flex-grow: 1;
+					.pp();
+					padding: 20px;
+					text-align: center;
+					font-family: "Bebas Neue Bold";
+					font-size: 30px;
+					font-weight: 400;
+					line-height: 22px;
+					letter-spacing: 0.75px;
+					margin: 0;
+					
+					&:not(.active) {
+						background-color: #f8f7f7;
+						color: #949495;
+					}
+					
+					&:not(:last-child) {
+						margin-right: 4px;
+					}
+				}
+			}
+			
+			.info {
+				margin: 0;
+				
+				.title {
+					.pp();
+					flex-grow: 1;
+					border: none;
+					padding: 20px 15px;
+					font-family: "Bebas Neue Bold";
+					font-size: 30px;
+					font-weight: 400;
+					line-height: 22px;
+					letter-spacing: 0.75px;
+					margin: 0;
+					margin-bottom: 4px;
+					
+					&:not(.active) {
+						background-color: #f8f7f7;
+						color: #949495;
+					}
+					
+					&::before {
+						font-size: 16px;
+					}
+				}
+				
+				.content {
+					.pp();
+					color: #868585;
+					font-family: "Bliss Pro";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 26px;
+					padding: 20px 25px 25px 20px;
+					border: none;
+					margin-bottom: 4px;
+					
+					@media (@sm) {
+						padding: 35px 80px 30px 30px;
+					}
+				}
+			}
+		}
+		
+		.recommendation {
+			.pp();
+			
+			&heading {
+				color: #1a1a1a;
+				font-family: "Bliss Pro";
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+			.icon2.alert {
+				font-size: 25px;
+				padding-left: 10px;
+			}
+			
+			.content {
+				color: #1a1a1a;
+				font-family: "Bliss Pro";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				padding: 10px;
+				padding-bottom: 15px;
+			}
+		}
+		
+		.advise {
+			.pp();
+			
+			&heading {
+				color: #1a1a1a;
+				font-family: "Bliss Pro";
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+			
+			.icon.book {
+				&::before {
+					content: '';
+					font-size: 21px;
+					padding-left: 10px;
+				}
+			}
+			
+			.content {
+				color: #55b025;
+				font-family: "Bliss Pro";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				padding: 10px;
+				padding-bottom: 15px;
+			}
+		}
+		
+		.our_advantages {
+			background: none;
+			margin-left: -8px;
+			margin-right: -8px;
+			margin-bottom: 70px;
+			
+			&-item {
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+			
+			&-content {
+				padding: 20px;
+				margin-bottom: 12px;
+			}
+			
+			&-name {
+				color: #868585;
+				font-family: "Bliss Pro";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
 			}
 		}
 	}

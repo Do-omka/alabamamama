@@ -2170,6 +2170,11 @@ th {
   border: unset;
   margin-bottom: 12px;
 }
+@media (min-width: 576px) {
+  #gachi .pp {
+    padding: 15px;
+  }
+}
 #gachi .wrapper-product {
   background-color: #ebebeb;
 }
@@ -2242,12 +2247,12 @@ th {
   align-items: center;
   text-align: center;
 }
-#gachi .right .productvars {
+#gachi .product .right .productvars {
   background: none;
   padding-bottom: 12px;
   margin-top: 0;
 }
-#gachi .right .productvars .pp {
+#gachi .product .right .productvars .pp {
   background-color: #fff;
   padding: 10px;
   border: unset;
@@ -2259,11 +2264,11 @@ th {
   margin-bottom: 0;
 }
 @media (min-width: 576px) {
-  #gachi .right .productvars .pp {
+  #gachi .product .right .productvars .pp {
     padding: 15px;
   }
 }
-#gachi .right .productvars .taste {
+#gachi .product .right .productvars .taste {
   color: #000000;
   font-family: "Bliss Pro";
   font-size: 20px;
@@ -2272,7 +2277,7 @@ th {
   width: auto;
   margin-right: auto;
 }
-#gachi .right .productvars .fas {
+#gachi .product .right .productvars .fas {
   padding-top: 0;
   padding-bottom: 0;
   color: #000000;
@@ -2282,18 +2287,18 @@ th {
   line-height: 22px;
   background-color: #f5f5f5;
 }
-#gachi .right .productvars .fas .retail {
+#gachi .product .right .productvars .fas .retail {
   display: flex;
   align-items: center;
 }
-#gachi .right .productvars .fas .price {
+#gachi .product .right .productvars .fas .price {
   color: #171717;
   font-family: "Bebas Neue Bold";
   font-weight: 400;
   line-height: 22px;
   font-size: 30px;
 }
-#gachi .right .productvars .fas .weight {
+#gachi .product .right .productvars .fas .weight {
   color: #949495;
   font-family: "Bliss Pro";
   font-size: 18px;
@@ -2301,10 +2306,10 @@ th {
   line-height: 22px;
   margin-right: 15px;
 }
-#gachi .right .productvars .fas .weight::after {
+#gachi .product .right .productvars .fas .weight::after {
   content: ' гр.';
 }
-#gachi .right .productvars .fas .special {
+#gachi .product .right .productvars .fas .special {
   display: flex;
   color: #55b025;
   font-family: "Bliss Pro";
@@ -2315,16 +2320,16 @@ th {
   border: 1px solid #55b025;
   margin: 0 5px;
 }
-#gachi .right .productvars .fas .special > * {
+#gachi .product .right .productvars .fas .special > * {
   color: inherit;
 }
-#gachi .right .productvars .fas > :not(.special) {
+#gachi .product .right .productvars .fas > :not(.special) {
   margin: 5px;
 }
-#gachi .right .productvars .list {
+#gachi .product .right .productvars .list {
   padding: 0;
 }
-#gachi .right .productvars .list .item {
+#gachi .product .right .productvars .list .item {
   background-color: #fff;
   padding: 10px;
   border: unset;
@@ -2336,32 +2341,32 @@ th {
   margin-bottom: 0;
 }
 @media (min-width: 576px) {
-  #gachi .right .productvars .list .item {
+  #gachi .product .right .productvars .list .item {
     padding: 15px;
   }
 }
-#gachi .right .productvars .list .item:not(:last-child) {
+#gachi .product .right .productvars .list .item:not(:last-child) {
   border-bottom: 1px solid #e4e4e4;
 }
-#gachi .right .productvars .list .item .buy {
+#gachi .product .right .productvars .list .item .buy {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin: 0;
 }
-#gachi .right .productvars .list .item .status {
+#gachi .product .right .productvars .list .item .status {
   width: auto;
   text-transform: uppercase;
 }
-#gachi .right .productvars .list .item .status::before {
+#gachi .product .right .productvars .list .item .status::before {
   content: '';
 }
-#gachi .right .productvars .list .item .countwrap {
+#gachi .product .right .productvars .list .item .countwrap {
   width: auto;
   margin-left: 10px;
   margin-right: 10px;
 }
-#gachi .right .productvars .list .item .countwrap .count {
+#gachi .product .right .productvars .list .item .countwrap .count {
   all: unset;
   display: block;
   -webkit-text-fill-color: currentColor;
@@ -2371,13 +2376,13 @@ th {
   border-radius: 0;
   background-color: #ffffff;
 }
-#gachi .right .productvars .list .item .countwrap .count > * {
+#gachi .product .right .productvars .list .item .countwrap .count > * {
   all: unset;
   display: block;
   -webkit-text-fill-color: currentColor;
   text-size-adjust: 100%;
 }
-#gachi .right .productvars .list .item .countwrap .count .btn.icon {
+#gachi .product .right .productvars .list .item .countwrap .count .btn.icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2389,13 +2394,13 @@ th {
   width: 30px;
   height: 30px;
 }
-#gachi .right .productvars .list .item .countwrap .count .btn.icon.inc {
+#gachi .product .right .productvars .list .item .countwrap .count .btn.icon.inc {
   order: 1;
 }
-#gachi .right .productvars .list .item .countwrap .count .input {
+#gachi .product .right .productvars .list .item .countwrap .count .input {
   width: 26px;
 }
-#gachi .right .productvars .list .item .countwrap .count .input input {
+#gachi .product .right .productvars .list .item .countwrap .count .input input {
   color: #56b325;
   font-family: "Bliss Pro";
   font-size: 22px;
@@ -2405,34 +2410,34 @@ th {
   width: 100%;
   height: 100%;
 }
-#gachi .right .productvars .list .item > * {
+#gachi .product .right .productvars .list .item > * {
   margin: 5px;
 }
-#gachi .right .productvars .list .item .basket {
+#gachi .product .right .productvars .list .item .basket {
   background-color: #ca0d03;
 }
 @media (max-width: 767px) {
-  #gachi .right .productvars .list .item .basket {
+  #gachi .product .right .productvars .list .item .basket {
     width: 51px;
     height: 46px;
     font-size: 0;
     background: #ca0d03 url(../img/basket.png) no-repeat center / contain content-box border-box;
   }
 }
-#gachi .right .productvars .list .item.not_available .taste,
-#gachi .right .productvars .list .item.not_available .status {
+#gachi .product .right .productvars .list .item.not_available .taste,
+#gachi .product .right .productvars .list .item.not_available .status {
   color: #878787;
 }
-#gachi .right .productvars .btnplace {
+#gachi .product .right .productvars .btnplace {
   width: auto;
   margin: 0;
 }
 @media (min-width: 576px) {
-  #gachi .right .productvars .btnplace {
+  #gachi .product .right .productvars .btnplace {
     margin: 0 5px;
   }
 }
-#gachi .right .productvars .btnplace .basket {
+#gachi .product .right .productvars .btnplace .basket {
   background-color: #55b025;
   color: #ffffff;
   font-family: "Bebas Neue Bold";
@@ -2447,7 +2452,7 @@ th {
   max-width: none;
   text-transform: uppercase;
 }
-#gachi .right .productvars .to_discount {
+#gachi .product .right .productvars .to_discount {
   color: #000000;
   font-family: "Bliss Pro";
   font-size: 18px;
@@ -2456,14 +2461,14 @@ th {
   text-decoration-line: underline;
   text-decoration-style: dashed;
 }
-#gachi .right .productvars .to_discount.pp {
+#gachi .product .right .productvars .to_discount.pp {
   border-top: 1px solid #e4e4e4;
 }
-#gachi .right .productvars .info .total {
+#gachi .product .right .productvars .info .total {
   display: flex;
   align-items: center;
 }
-#gachi .right .productvars .info .infoprice {
+#gachi .product .right .productvars .info .infoprice {
   color: #ca0d03;
   font-family: "Bebas Neue Bold";
   font-size: 40px;
@@ -2472,25 +2477,200 @@ th {
   margin: 5px;
   margin-right: 25px;
 }
-#gachi .right .productvars .info .infoprice .oldprice {
+#gachi .product .right .productvars .info .infoprice .oldprice {
   display: flex;
   color: #949495;
   font-size: 24px;
   margin: 0;
 }
-#gachi .right .productvars .info .infoprice .sale {
+#gachi .product .right .productvars .info .infoprice .sale {
   color: #ca0d03;
   font-size: 16px;
   background: unset;
   text-decoration: none;
 }
-#gachi .right .productvars .info .currprice {
+#gachi .product .right .productvars .info .currprice {
   color: #ca0d03;
   font-family: "Bebas Neue Bold";
   font-size: 40px;
   font-weight: 400;
   line-height: 22px;
   margin: 10px;
+}
+#gachi .product .right .productinfo {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#gachi .product .right .productinfo .tabs {
+  display: flex;
+  border: none;
+}
+#gachi .product .right .productinfo .tabs > li {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Bebas Neue Bold";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .productinfo .tabs > li {
+    padding: 15px;
+  }
+}
+#gachi .product .right .productinfo .tabs > li:not(.active) {
+  background-color: #f8f7f7;
+  color: #949495;
+}
+#gachi .product .right .productinfo .tabs > li:not(:last-child) {
+  margin-right: 4px;
+}
+#gachi .product .right .productinfo .info {
+  margin: 0;
+}
+#gachi .product .right .productinfo .info .title {
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+  flex-grow: 1;
+  border: none;
+  padding: 20px 15px;
+  font-family: "Bebas Neue Bold";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .productinfo .info .title {
+    padding: 15px;
+  }
+}
+#gachi .product .right .productinfo .info .title:not(.active) {
+  background-color: #f8f7f7;
+  color: #949495;
+}
+#gachi .product .right .productinfo .info .title::before {
+  font-size: 16px;
+}
+#gachi .product .right .productinfo .info .content {
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+  color: #868585;
+  font-family: "Bliss Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 20px 25px 25px 20px;
+  border: none;
+  margin-bottom: 4px;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .productinfo .info .content {
+    padding: 15px;
+  }
+}
+@media (min-width: 576px) {
+  #gachi .product .right .productinfo .info .content {
+    padding: 35px 80px 30px 30px;
+  }
+}
+#gachi .product .right .recommendation {
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .recommendation {
+    padding: 15px;
+  }
+}
+#gachi .product .right .recommendationheading {
+  color: #1a1a1a;
+  font-family: "Bliss Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#gachi .product .right .recommendation .icon2.alert {
+  font-size: 25px;
+  padding-left: 10px;
+}
+#gachi .product .right .recommendation .content {
+  color: #1a1a1a;
+  font-family: "Bliss Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+#gachi .product .right .advise {
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .advise {
+    padding: 15px;
+  }
+}
+#gachi .product .right .adviseheading {
+  color: #1a1a1a;
+  font-family: "Bliss Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#gachi .product .right .advise .icon.book::before {
+  content: '';
+  font-size: 21px;
+  padding-left: 10px;
+}
+#gachi .product .right .advise .content {
+  color: #55b025;
+  font-family: "Bliss Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+#gachi .product .right .our_advantages {
+  background: none;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 70px;
+}
+#gachi .product .right .our_advantages-item {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#gachi .product .right .our_advantages-content {
+  padding: 20px;
+  margin-bottom: 12px;
+}
+#gachi .product .right .our_advantages-name {
+  color: #868585;
+  font-family: "Bliss Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
