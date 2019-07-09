@@ -2164,5 +2164,83 @@ th {
     height: 2px;
   }
 }
+#gachi .wrapper-product {
+  background-color: #ebebeb;
+}
+#gachi .wrapper-product .pp {
+  background-color: #fff;
+  padding: 10px;
+  border: unset;
+  margin-bottom: 12px;
+}
+#gachi .wrapper-product .product {
+  border: unset;
+}
+#gachi .wrapper-product h1.name {
+  font-family: "Bliss Pro";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+@media (min-width: 576px) {
+  #gachi .wrapper-product h1.name {
+    font-size: 36px;
+  }
+}
+#gachi .left .brand {
+  display: flex;
+  color: #000000;
+  font-family: "Bliss Pro";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media (min-width: 576px) {
+  #gachi .left .brand {
+    font-size: 18px;
+  }
+}
+#gachi .left .brand-img {
+  position: relative;
+  width: 83px;
+  margin-right: 13px;
+}
+#gachi .left .brand-img::before {
+  content: '';
+  display: block;
+  padding-top: 29%;
+}
+#gachi .left .brand-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#gachi .left .sosoc {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+#gachi .left .sosoc-item {
+  color: #aeadad;
+  font-family: "Font Awesome";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+  padding: 0 6px;
+}
+#gachi .left .sosoc-item a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 /*# sourceMappingURL=maps/style.css.map */
