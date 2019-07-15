@@ -2169,6 +2169,12 @@ th {
 }
 #gachi .wrapper-product .product {
   border: unset;
+  padding-top: 30px;
+}
+@media (min-width: 576px) {
+  #gachi .wrapper-product .product {
+    padding-top: 50px;
+  }
 }
 #gachi .wrapper-product h1.name {
   font-family: "BlissPro";
