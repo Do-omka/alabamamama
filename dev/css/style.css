@@ -2346,20 +2346,20 @@ th {
 #gachi .product .right .productvars .list .item .buy {
   display: flex;
   align-items: center;
-  margin-left: auto;
   margin: 0;
 }
 #gachi .product .right .productvars .list .item .status {
   width: auto;
   text-transform: uppercase;
+  margin: 0 5px;
 }
 #gachi .product .right .productvars .list .item .status::before {
   content: '';
 }
 #gachi .product .right .productvars .list .item .countwrap {
   width: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 #gachi .product .right .productvars .list .item .countwrap .count {
   all: unset;
@@ -2461,6 +2461,7 @@ th {
 }
 #gachi .product .right .productvars .info .total {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 #gachi .product .right .productvars .info .infoprice {
