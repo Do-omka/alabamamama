@@ -2227,7 +2227,7 @@ th {
 }
 #gachi .left .sosoc-item {
   color: #aeadad;
-  font-family: "Font Awesome";
+  font-family: "FontAwesome";
   font-size: 24px;
   font-weight: 400;
   line-height: 22px;
@@ -2635,6 +2635,7 @@ th {
 }
 #gachi .product .right .advise .icon.book::before {
   content: '';
+  font-family: "FontAwesome";
   font-size: 21px;
   padding-left: 10px;
 }
