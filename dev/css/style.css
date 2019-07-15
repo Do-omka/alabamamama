@@ -2178,6 +2178,7 @@ th {
   }
 }
 #gachi .wrapper-product h1.name {
+  float: left;
   font-family: "BlissPro";
   font-size: 25px;
   font-weight: 400;
@@ -2189,6 +2190,9 @@ th {
   #gachi .wrapper-product h1.name {
     font-size: 36px;
   }
+}
+#gachi .left {
+  clear: left;
 }
 #gachi .left .brand {
   display: flex;
