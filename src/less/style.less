@@ -593,18 +593,17 @@
 							background-color: #ffffff;
 							
 							.btn.icon {
-								.c();
-								justify-content: center;
-								align-items: center;
 								color: #9c9c9e;
-								font-family: "BlissPro";
-								font-size: 18px;
-								font-weight: 400;
 								width: 30px;
 								height: 30px;
 								
+								&.dec {
+									font-size: 1px;
+								}
+								
 								&.inc {
 									order: 1;
+									font-size: 10px;
 								}
 							}
 							
@@ -652,9 +651,11 @@
 			.btnplace {
 				width: auto;
 				margin: 0;
+				margin-left: 5px;
 				
 				@media (@sm) {
-					margin: 0 5px;
+					margin-right: 5px;
+					margin-left: 5px;
 				}
 				
 				.basket {

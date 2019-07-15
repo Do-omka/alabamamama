@@ -2383,19 +2383,16 @@ th {
   text-size-adjust: 100%;
 }
 #gachi .product .right .productvars .list .item .countwrap .count .btn.icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #9c9c9e;
-  font-family: "BlissPro";
-  font-size: 18px;
-  font-weight: 400;
   width: 30px;
   height: 30px;
 }
+#gachi .product .right .productvars .list .item .countwrap .count .btn.icon.dec {
+  font-size: 1px;
+}
 #gachi .product .right .productvars .list .item .countwrap .count .btn.icon.inc {
   order: 1;
+  font-size: 10px;
 }
 #gachi .product .right .productvars .list .item .countwrap .count .input {
   width: 26px;
@@ -2431,10 +2428,12 @@ th {
 #gachi .product .right .productvars .btnplace {
   width: auto;
   margin: 0;
+  margin-left: 5px;
 }
 @media (min-width: 576px) {
   #gachi .product .right .productvars .btnplace {
-    margin: 0 5px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 #gachi .product .right .productvars .btnplace .basket {
