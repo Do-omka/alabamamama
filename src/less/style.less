@@ -736,6 +736,22 @@
 			margin-top: 0;
 			margin-bottom: 12px;
 			
+			.reviews_stars() {
+				color: #ca0d03;
+				
+				&::before {
+					color: rgb(148, 148, 149);
+				}
+				
+				&::after {
+					content: '';
+					font-family: 'FontAwesome';
+					font-size: 18px;
+					margin: 0 0 0 16px;
+					vertical-align: middle;
+				}
+			}
+			
 			.tabs > li, 
 			.info .title {
 				font-family: "Bebas Neue Bold";
@@ -754,6 +770,9 @@
 				
 				> li {
 					flex-grow: 1;
+					.c();
+					justify-content: center;
+					align-items: center;
 					.pp();
 					padding: 20px;
 					text-align: center;
@@ -766,11 +785,27 @@
 					&:not(:last-child) {
 						margin-right: 4px;
 					}
+					
+					&:last-child {
+						.reviews_stars();
+						flex-direction: column;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						
+						&::after {
+							order: -1;
+							margin: 0 0 5px;
+						}
+					}
 				}
 			}
 			
 			.info {
 				margin: 0;
+				
+				> li:last-child .title {
+					.reviews_stars();
+				}
 				
 				.title {
 					.pp();

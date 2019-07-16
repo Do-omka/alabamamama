@@ -2519,6 +2519,10 @@ th {
 }
 #gachi .product .right .productinfo .tabs > li {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   padding: 10px;
   border: unset;
@@ -2538,8 +2542,41 @@ th {
 #gachi .product .right .productinfo .tabs > li:not(:last-child) {
   margin-right: 4px;
 }
+#gachi .product .right .productinfo .tabs > li:last-child {
+  color: #ca0d03;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#gachi .product .right .productinfo .tabs > li:last-child::before {
+  color: #949495;
+}
+#gachi .product .right .productinfo .tabs > li:last-child::after {
+  content: '';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  margin: 0 0 0 16px;
+  vertical-align: middle;
+}
+#gachi .product .right .productinfo .tabs > li:last-child::after {
+  order: -1;
+  margin: 0 0 5px;
+}
 #gachi .product .right .productinfo .info {
   margin: 0;
+}
+#gachi .product .right .productinfo .info > li:last-child .title {
+  color: #ca0d03;
+}
+#gachi .product .right .productinfo .info > li:last-child .title::before {
+  color: #949495;
+}
+#gachi .product .right .productinfo .info > li:last-child .title::after {
+  content: '';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  margin: 0 0 0 16px;
+  vertical-align: middle;
 }
 #gachi .product .right .productinfo .info .title {
   background-color: #fff;
