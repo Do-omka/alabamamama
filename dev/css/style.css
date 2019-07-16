@@ -2502,6 +2502,17 @@ th {
   margin-top: 0;
   margin-bottom: 12px;
 }
+#gachi .product .right .productinfo .tabs > li,
+#gachi .product .right .productinfo .info .title {
+  font-family: "Bebas Neue Bold";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  border: none;
+  margin: 0;
+}
 #gachi .product .right .productinfo .tabs {
   display: flex;
   border: none;
@@ -2514,12 +2525,6 @@ th {
   margin-bottom: 12px;
   padding: 20px;
   text-align: center;
-  font-family: "Bebas Neue Bold";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.75px;
-  margin: 0;
 }
 @media (min-width: 576px) {
   #gachi .product .right .productinfo .tabs > li {
@@ -2544,12 +2549,6 @@ th {
   flex-grow: 1;
   border: none;
   padding: 20px 15px;
-  font-family: "Bebas Neue Bold";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.75px;
-  margin: 0;
   margin-bottom: 4px;
 }
 @media (min-width: 576px) {

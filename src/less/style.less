@@ -736,22 +736,27 @@
 			margin-top: 0;
 			margin-bottom: 12px;
 			
+			.tabs > li, 
+			.info .title {
+				font-family: "Bebas Neue Bold";
+				font-size: 30px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0.75px;
+				text-transform: uppercase;
+				border: none;
+				margin: 0;
+			}
+			
 			.tabs {
 				display: flex;
 				border: none;
-				// text-transform: uppercase;
 				
 				> li {
 					flex-grow: 1;
 					.pp();
 					padding: 20px;
 					text-align: center;
-					font-family: "Bebas Neue Bold";
-					font-size: 30px;
-					font-weight: 400;
-					line-height: 22px;
-					letter-spacing: 0.75px;
-					margin: 0;
 					
 					&:not(.active) {
 						background-color: #f8f7f7;
@@ -772,12 +777,6 @@
 					flex-grow: 1;
 					border: none;
 					padding: 20px 15px;
-					font-family: "Bebas Neue Bold";
-					font-size: 30px;
-					font-weight: 400;
-					line-height: 22px;
-					letter-spacing: 0.75px;
-					margin: 0;
 					margin-bottom: 4px;
 					
 					&:not(.active) {
