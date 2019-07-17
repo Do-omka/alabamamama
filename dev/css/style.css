@@ -2293,7 +2293,7 @@ th {
 }
 #gachi .product .right .productvars .fas .price {
   color: #171717;
-  font-family: "Bebas Neue Bold";
+  font-family: "BebasNeue";
   font-weight: 400;
   line-height: 22px;
   font-size: 30px;
@@ -2439,7 +2439,7 @@ th {
 #gachi .product .right .productvars .btnplace .basket {
   background-color: #55b025;
   color: #ffffff;
-  font-family: "Bebas Neue Bold";
+  font-family: "BebasNeue";
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -2470,7 +2470,7 @@ th {
 }
 #gachi .product .right .productvars .info .infoprice {
   color: #ca0d03;
-  font-family: "Bebas Neue Bold";
+  font-family: "BebasNeue";
   font-size: 40px;
   font-weight: 400;
   line-height: 22px;
@@ -2491,7 +2491,7 @@ th {
 }
 #gachi .product .right .productvars .info .currprice {
   color: #ca0d03;
-  font-family: "Bebas Neue Bold";
+  font-family: "BebasNeue";
   font-size: 40px;
   font-weight: 400;
   line-height: 22px;
@@ -2504,7 +2504,7 @@ th {
 }
 #gachi .product .right .productinfo .tabs > li,
 #gachi .product .right .productinfo .info .title {
-  font-family: "Bebas Neue Bold";
+  font-family: "BebasNeue";
   font-size: 30px;
   font-weight: 400;
   line-height: 22px;
