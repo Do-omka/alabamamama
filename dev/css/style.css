@@ -2247,6 +2247,9 @@ th {
   align-items: center;
   text-align: center;
 }
+#gachi .product .right {
+  margin: 0;
+}
 #gachi .product .right .productvars {
   background: none;
   padding-bottom: 12px;
