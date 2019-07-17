@@ -2277,6 +2277,7 @@ th {
   font-size: 20px;
   font-weight: 400;
   font-size: 18px;
+  word-break: break-word;
   width: auto;
   margin-right: auto;
 }
@@ -2342,6 +2343,7 @@ th {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
+  flex-wrap: nowrap;
 }
 @media (min-width: 576px) {
   #gachi .product .right .productvars .list .item {
@@ -2353,12 +2355,21 @@ th {
 }
 #gachi .product .right .productvars .list .item .buy {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 0;
 }
+@media (min-width: 576px) {
+  #gachi .product .right .productvars .list .item .buy {
+    flex-direction: row;
+  }
+}
 #gachi .product .right .productvars .list .item .status {
   width: auto;
+  text-align: right;
   text-transform: uppercase;
+  font-family: "BebasNeue";
+  letter-spacing: 0.5px;
   margin: 0 5px;
 }
 #gachi .product .right .productvars .list .item .status::before {
@@ -2368,6 +2379,12 @@ th {
   width: auto;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 5px;
+}
+@media (min-width: 576px) {
+  #gachi .product .right .productvars .list .item .countwrap {
+    margin-bottom: 0;
+  }
 }
 #gachi .product .right .productvars .list .item .countwrap .count {
   all: unset;
@@ -2386,9 +2403,10 @@ th {
   text-size-adjust: 100%;
 }
 #gachi .product .right .productvars .list .item .countwrap .count .btn.icon {
-  color: #9c9c9e;
   width: 30px;
   height: 30px;
+  color: #9c9c9e;
+  cursor: pointer;
 }
 #gachi .product .right .productvars .list .item .countwrap .count .btn.icon.dec {
   font-size: 1px;
@@ -2401,14 +2419,14 @@ th {
   width: 26px;
 }
 #gachi .product .right .productvars .list .item .countwrap .count .input input {
+  width: 100%;
+  height: 100%;
   color: #56b325;
   font-family: "BlissPro";
   font-size: 22px;
   font-weight: 400;
   font-size: 18px;
   background-color: #f7f5f5;
-  width: 100%;
-  height: 100%;
 }
 #gachi .product .right .productvars .list .item > * {
   margin: 5px;
@@ -2440,6 +2458,9 @@ th {
   }
 }
 #gachi .product .right .productvars .btnplace .basket {
+  width: 170px;
+  padding: 12px;
+  max-width: none;
   background-color: #55b025;
   color: #ffffff;
   font-family: "BebasNeue";
@@ -2447,12 +2468,9 @@ th {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.45px;
-  padding: 12px;
+  text-transform: uppercase;
   border: 0;
   border-radius: 0;
-  width: 170px;
-  max-width: none;
-  text-transform: uppercase;
 }
 #gachi .product .right .productvars .to_discount {
   color: #000000;
