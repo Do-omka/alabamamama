@@ -148,6 +148,11 @@ td,
 th {
   display: table-cell;
 }
+.topBar *,
+.menu *,
+.footer * {
+  box-sizing: unset;
+}
 @-ms-viewport {
   width: device-width;
 }
